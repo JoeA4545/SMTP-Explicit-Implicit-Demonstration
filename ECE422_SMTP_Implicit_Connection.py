@@ -1,7 +1,7 @@
 import smtplib, ssl
 
-email_address = 'ECE422SMTPTEST@gmail.com'
-email_password = 'Ece422-001SmtpTEST123'
+email_address = ''
+email_password = ''
 
 context = ssl.create_default_context() #Using Python recommended module to initiate TLS-encrypted connection
 
@@ -29,3 +29,4 @@ with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as smtp: #Creates 
             confirmation = input("Please input 'y' or 'n': ")
     print('Logging Out...')        
     smtp.quit() #Logs Out
+
