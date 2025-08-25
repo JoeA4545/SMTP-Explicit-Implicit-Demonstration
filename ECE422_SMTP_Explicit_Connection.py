@@ -1,7 +1,7 @@
 import smtplib
 
-email_address = 'ECE422SMTPTEST@gmail.com'
-email_password = 'Ece422-001SmtpTEST123'
+email_address = ''
+email_password = ''
 
 #Explicit TLS
 with smtplib.SMTP('smtp.gmail.com', 587) as smtp: #Creates unsecure connection
@@ -33,3 +33,4 @@ with smtplib.SMTP('smtp.gmail.com', 587) as smtp: #Creates unsecure connection
             confirmation = input("Please input 'y' or 'n': ")
     print('Logging Out...')        
     smtp.quit() #Logs Out
+
